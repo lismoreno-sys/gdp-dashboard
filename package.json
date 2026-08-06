@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predev": "mkdir -p public/data && cp data/gdp_data.csv public/data/",
     "dev": "vite",
+    "prebuild": "mkdir -p public/data && cp data/gdp_data.csv public/data/",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview"
